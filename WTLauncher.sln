@@ -3,12 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35201.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WTLauncher.ConsoleApp", "WTLauncher.ConaoleApp\WTLauncher.ConsoleApp.csproj", "{E459E826-A750-41B2-A34B-EA57DE33A9F4}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F9D35B4E-6F93-4844-98EA-48F12EDDC44A}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WTLauncher.ConsoleApp", "WTLauncher.ConsoleApp\WTLauncher.ConsoleApp.csproj", "{79665F5F-1513-4A3A-A112-E14E43F4FD41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,10 +16,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E459E826-A750-41B2-A34B-EA57DE33A9F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E459E826-A750-41B2-A34B-EA57DE33A9F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E459E826-A750-41B2-A34B-EA57DE33A9F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E459E826-A750-41B2-A34B-EA57DE33A9F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79665F5F-1513-4A3A-A112-E14E43F4FD41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79665F5F-1513-4A3A-A112-E14E43F4FD41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79665F5F-1513-4A3A-A112-E14E43F4FD41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79665F5F-1513-4A3A-A112-E14E43F4FD41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
