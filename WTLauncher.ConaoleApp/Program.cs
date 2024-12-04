@@ -1,9 +1,32 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using System;
 using System.Diagnostics;
+using System.IO;
 
+// Check if an argument is provided
+string initialDirectory = null;
 
-//Open windows terminal on a separate process in c:\src
-Process.Start("wt.exe", "-d c:\\src");
+if (args.Length > 0)
+{
+    initialDirectory = args[0];
+}
+else
+{
+    string startupFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "startup");
+    if (File.Exists(startupFilePath))
+    {
+        initialDirectory = File.ReadAllText(startupFilePath).Trim();
+    }
+}
 
-//Exits the console app freeing all the resources
+// Open Windows Terminal in the specified initial directory if available
+if (!string.IsNullOrEmpty(initialDirectory))
+{
+    Process.Start("wt.exe", $"-d {initialDirectory}");
+}
+else
+{
+    Process.Start("wt.exe");
+}
+
+// Exits the console app freeing all the resources
 Environment.Exit(0);
