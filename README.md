@@ -12,9 +12,13 @@ This application simplifies the process by creating an easily accessible `.exe` 
 ## Usage
 Integrate this executable with your hardware device's configuration software by setting it as the target action for a button or key press. Once set up, pressing the configured button on your hardware will directly open Windows Terminal through this proxy.
 
-## Highlights
+## Features
 - **Seamless Integration**: Works out of the box with a variety of hardware controllers.
 - **Easy Setup**: Minimal configuration required, just link the `.exe` in your device’s software.
 - **Open Source**: Modify and extend the codebase to suit your specific needs.
+- **Flexible Initial Directory**: 
+  - **Command-Line Argument**: Specify the initial directory through a command-line argument, useful for shortcuts.
+  - **Startup File**: If no argument is provided, the application reads the initial directory from a `startup` file located in the same directory as the executable.
+  - **Default Directory**: If neither an argument nor a `startup` file is provided, the application opens Windows Terminal in the default directory defined for the system.
 
 Interestingly, this is the first repository I've created where the description is longer than the program itself—a reflection of the simplicity and focused utility of the application.

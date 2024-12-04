@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.IO;
 
 // Check if an argument is provided
-string initialDirectory = null;
+string? initialDirectory = null;
 
 if (args.Length > 0)
 {
